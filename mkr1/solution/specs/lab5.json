@@ -1,0 +1,214 @@
+{
+ "title": "Лабораторна 5. Донавчання моделей (Fine-Tuning)",
+ "deadline": "2026-11-28",
+ "forbidden": [
+  {
+   "kind": "model_weights",
+   "quote": "Ваги моделі чи адаптера в репозиторій не додавайте"
+  }
+ ],
+ "required": [
+  {
+   "path": "lab5/01_bert_head.ipynb",
+   "type": "file",
+   "quote": "/lab5/01_bert_head.ipynb"
+  },
+  {
+   "path": "lab5/02_chat_templates.ipynb",
+   "type": "file",
+   "quote": "/lab5/02_chat_templates.ipynb"
+  },
+  {
+   "path": "lab5/03_sft_lora.ipynb",
+   "type": "file",
+   "quote": "/lab5/03_sft_lora.ipynb"
+  },
+  {
+   "path": "lab5/ft_project.ipynb",
+   "type": "file",
+   "quote": "/lab5/ft_project.ipynb"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "text": "Як довго виконувалися клітинки ноутбуку 01_bert_head? Чи були проблеми з запуском, які?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 2,
+   "text": "Як Ви розумієте, що таке токен [CLS]? Яким чином він виконує свою функцію?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 3,
+   "text": "Яке пряме застосування базової моделі bert-base-uncased?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 4,
+   "text": "Як Ви вважаєте, чи варто боротися (і якщо так, то яким чином) з проявами сексизму LLM-моделей?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 5,
+   "text": "Для чого в секції \"Токенізація пари речень\" виводяться числа 0 і 1?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 6,
+   "text": "Що позначають числа 768 і 2, що виводяться після завантаження AutoModelForSequenceClassification.from_pretrained()?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 7,
+   "text": "Те що в кістяку (backbone) набагато більше параметрів ніж в голові, це добре чи погано в нашому випадку?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 8,
+   "text": "Що саме вимірюється за допомогою метрик accuracy & F1 в 01_bert_head?",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 9,
+   "text": "Збільшіть кількість епох тренування в 01_bert_head, покажіть (скопіювавши результати) що відбувається і чому.",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 10,
+   "text": "Додайте ще 4 перевірки на власних даних в пункті 4 в 01_bert_head.",
+   "file": "lab5/01_bert_head.ipynb"
+  },
+  {
+   "n": 11,
+   "text": "Як довго виконувалися клітинки ноутбуку 02_chat_templates? Чи були проблеми з запуском, які?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 12,
+   "text": "Для чого змінювати параметр add_generation_prompt в методі apply_chat_template() при використанні моделі? Як по згенерованим розмовам можна дізнатися значення цього параметру, яке було задано при виклику метода?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 13,
+   "text": "Чим відрізняються ролі system від assistant в шаблонах розмов?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 14,
+   "text": "Прокоментуйте вивід даних в секції 2 «Як шаблон розмови форматує діалог». Які секції було додано шаблонізатором розмов і для чого?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 15,
+   "text": "Прокоментуйте різницю між Base і Instruct, проглянувши вивід в секції 3.",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 16,
+   "text": "Чому в режимі /think при генерації було передано параметр max_new_tokens=300?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 17,
+   "text": "Чи впоралася модель з математичними задачами? Який би режим генерації Ви обрали для себе, якщо б Вам потрібна була допомога?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 18,
+   "text": "Які відмінності в шаблонах розмов Ви помітили в секції 5?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 19,
+   "text": "Для чого нам потрібно знати про шаблони розмов, якщо ми хочемо донавчити модель за допомогою SFT?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 20,
+   "text": "З яких даних було побудовано датасет HuggingFaceTB/smoltalk2?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 21,
+   "text": "Які модифікації даних відбуваються в секції \"Перетворення власного датасету у формат messages\"?",
+   "file": "lab5/02_chat_templates.ipynb"
+  },
+  {
+   "n": 22,
+   "text": "Як довго виконувалися клітинки ноутбуку 03_sft_lora? Чи були проблеми з запуском, які?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 23,
+   "text": "Прокоментуйте вивід \"Памʼять GPU після завантаження\". Чи очікуваним для Вас є результат?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 24,
+   "text": "Що робить рядок with torch.no_grad() у функції classify()?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 25,
+   "text": "Для чого у classify() задано do_sample=False?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 26,
+   "text": "В демо 1 було натреновано класифікатор з базової моделі за допомогою заміни голови. В демо 3 в ході інференсу моделі також відбувається класифікація звернень. Чому не можна застосувати такий же підхід?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 27,
+   "text": "Порівняйте кількість токенів короткого й детального промпту (розділ 2). Як ця різниця вплине на вартість обробки 10 000 звернень на день?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 28,
+   "text": "Для чого в датасеті задано колонку chat_template_kwargs з enable_thinking=False? Що, на Вашу думку, сталося б із моделлю, якби її донавчали на цих прикладах у режимі /think?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 29,
+   "text": "Що означає параметр assistant_only_loss=True? На яких токенах модель вчилася б без нього і чим це погано для нашої задачі?",
+   "file": "lab5/03_sft_lora.ipynb"
+  },
+  {
+   "n": 30,
+   "text": "Порівняйте LoRA і QLoRA за пам'яттю, часом тренування і якістю (розділ 9). У яких випадках Ви обрали б QLoRA?",
+   "file": "lab5/03_sft_lora.ipynb"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Задача і чому потрібне донавчання",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Модель і дані",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Метрика й результат до донавчання",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Метод донавчання й гіперпараметри",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Результат після донавчання",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Аналіз помилок",
+   "file": "lab5/ft_project.ipynb"
+  },
+  {
+   "title": "Висновок",
+   "file": "lab5/ft_project.ipynb"
+  }
+ ]
+}

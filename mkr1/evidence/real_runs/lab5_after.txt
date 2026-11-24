@@ -1,0 +1,28 @@
+# lab5_after: labcheck check --spec specs/lab5.json --no-ai
+# код завершення: 0
+# дата: 2026-11-24 14:18:07
+# вхідні файли (SHA-256, перші 12 символів):
+#   01_bert_head.ipynb  5250267cf1bf  578266 Б
+#   02_chat_templates.ipynb  9d662255529e  828850 Б
+#   03_sft_lora.ipynb  f5a55e938c69  800373 Б
+#   ft_project.ipynb  b6018d48ba41  745167 Б
+labcheck | Лабораторна 5. Донавчання моделей (Fine-Tuning) | специфікація: /home/claude/mkr1/solution/specs/lab5.json
+тека: /tmp/labcheck_lwasujhq
+
+--- Обов'язкові файли ---
+[ OK ] lab5/01_bert_head.ipynb
+[ OK ] lab5/02_chat_templates.ipynb
+[ OK ] lab5/03_sft_lora.ipynb
+[ OK ] lab5/ft_project.ipynb
+
+--- Знахідки ---
+(немає)
+[info] I_DEADLINE 2026-11-28: до дедлайну 4 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 30 із 30
+
+--- Підсумок ---
+помилок: 0 | попереджень: 0 | час: 0.09 с
+примітка: AI-суддівство пропущено: не задано LLM_API_KEY/LLM_MODEL (або --no-ai); решта перевірок виконано
+ВИСНОВОК: ГОТОВО до здачі.

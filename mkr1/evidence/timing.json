@@ -1,0 +1,30 @@
+{
+ "lab6_before": {
+  "repeats": 10,
+  "mean_s": 0.0597,
+  "median_s": 0.0598,
+  "max_s": 0.0695,
+  "input_mb": 3.51
+ },
+ "lab6_after": {
+  "repeats": 10,
+  "mean_s": 0.0788,
+  "median_s": 0.0786,
+  "max_s": 0.0807,
+  "input_mb": 3.15
+ },
+ "lab5_before": {
+  "repeats": 10,
+  "mean_s": 0.0737,
+  "median_s": 0.0745,
+  "max_s": 0.0833,
+  "input_mb": 3.16
+ },
+ "lab5_after": {
+  "repeats": 10,
+  "mean_s": 0.0795,
+  "median_s": 0.0787,
+  "max_s": 0.0879,
+  "input_mb": 2.82
+ }
+}

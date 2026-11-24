@@ -1,0 +1,36 @@
+# lab6_before: labcheck check --spec specs/lab6.json --no-ai
+# код завершення: 1
+# дата: 2026-11-24 14:18:05
+# вхідні файли (SHA-256, перші 12 символів):
+#   01_embeddings.ipynb  6234588d0e22  1488396 Б
+#   02_rag_from_scratch.ipynb  ba0ba1228cfe  547122 Б
+#   03_rag_langchain_eval.ipynb  29f19c089dfd  765603 Б
+#   rag_project.ipynb  e81700e0f131  875808 Б
+labcheck | Лабораторна 6. Генерація, доповнена пошуком (RAG) | специфікація: /home/claude/mkr1/solution/specs/lab6.json
+тека: /tmp/labcheck_rk304847
+
+--- Обов'язкові файли ---
+[ OK ] lab6/01_embeddings.ipynb
+[ OK ] lab6/02_rag_from_scratch.ipynb
+[ OK ] lab6/03_rag_langchain_eval.ipynb
+[ OK ] lab6/rag_project.ipynb
+
+--- Знахідки ---
+[ERR ] E_PLACEHOLDER lab6/01_embeddings.ipynb: залишилось плейсхолдерів у markdown-клітинках: 9 (клітинки 55, 59, 63, 67, 73, 77, 81, 84 …)
+[ERR ] E_PLACEHOLDER lab6/02_rag_from_scratch.ipynb: залишилось плейсхолдерів у markdown-клітинках: 9 (клітинки 44, 48, 51, 55, 58, 65, 68, 72 …)
+[ERR ] E_PLACEHOLDER lab6/03_rag_langchain_eval.ipynb: залишилось плейсхолдерів у markdown-клітинках: 11 (клітинки 37, 41, 45, 49, 53, 57, 61, 64 …)
+[ERR ] E_PLACEHOLDER lab6/rag_project.ipynb: залишилось плейсхолдерів у markdown-клітинках: 3 (клітинки 21, 28, 34)
+[WARN] W_Q_THIN lab6/01_embeddings.ipynb: питання 9: текстова відповідь надто коротка (5 слів, клітинок коду: 1)
+[WARN] W_Q_THIN lab6/02_rag_from_scratch.ipynb: питання 11: текстова відповідь надто коротка (13 слів, клітинок коду: 1)
+[WARN] W_Q_THIN lab6/02_rag_from_scratch.ipynb: питання 13: текстова відповідь надто коротка (5 слів, клітинок коду: 1)
+[WARN] W_Q_THIN lab6/02_rag_from_scratch.ipynb: питання 18: текстова відповідь надто коротка (7 слів, клітинок коду: 1)
+[WARN] W_Q_THIN lab6/03_rag_langchain_eval.ipynb: питання 21: текстова відповідь надто коротка (12 слів, клітинок коду: 1)
+[info] I_DEADLINE 2026-12-12: до дедлайну 18 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 30 із 30
+
+--- Підсумок ---
+помилок: 4 | попереджень: 5 | час: 0.07 с
+примітка: AI-суддівство пропущено: не задано LLM_API_KEY/LLM_MODEL (або --no-ai); решта перевірок виконано
+ВИСНОВОК: НЕ ГОТОВО до здачі — виправте помилки [ERR].

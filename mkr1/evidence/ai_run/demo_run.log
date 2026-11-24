@@ -1,0 +1,95 @@
+labcheck demo_run | 2026-11-24 19:05:15
+
+=== Крок 1/5: доступ до AI ===
+Сервіс: https://generativelanguage.googleapis.com/v1beta/openai
+Модель: gemini-3.5-flash-lite
+Ключ прийнято, моделей у списку: 65
+Тестовий запит пройшов: «Ок», 14+2 токенів
+
+=== Крок 2/5: підкинуті дефекти (без AI) ===
+Підкинуті дефекти: 17 видів × 5 варіантів = 85 мутантів
+  OK  видалено обов'язковий файл                 E_MISSING        5/5
+  OK  регістр каталогу Lab6 замість lab6         E_MISSING        5/5
+  OK  суфікс « (1)» після завантаження           E_MISSING        5/5
+  OK  плейсхолдер у markdown                     E_PLACEHOLDER    5/5
+  OK  зник заголовок відповіді                   E_Q_MISSING      5/5
+  OK  порожня відповідь                          W_Q_THIN         5/5
+  OK  ключ API у коді                            E_SECRET         5/5
+  OK  файл .env                                  E_SECRET         5/5
+  OK  ваги моделі                                E_FORBIDDEN      5/5
+  OK  векторний індекс                           E_FORBIDDEN      5/5
+  OK  файл понад 100 МБ                          E_TOO_BIG        5/5
+  OK  пошкоджений JSON ноутбука                  E_BAD_JSON       5/5
+  OK  помилка у виводі клітинки                  E_CELL_ERROR     5/5
+  OK  клітинки не запускались                    W_NOT_EXECUTED   5/5
+  OK  widgets без state (GitHub не відкриє)      W_WIDGETS_STATE  5/5
+  OK  службова тека .ipynb_checkpoints           W_JUNK           5/5
+  OK  зникла секція звіту                        W_SECTION        5/5
+recall: 85/85 = 100.0%
+зайвих спрацювань на чистому репозиторії: 0 (у 5 запусках)
+частка знахідок, що відповідають підкинутому дефекту або його каскаду: 100.0%
+середній час перевірки синтетичного репозиторію: 0.061 с
+
+=== Крок 3/5: AI-бенчмарк: розбір завдань і суддівство відповідей ===
+[розбір lab5] {"ok": true, "latency_s": 0.03, "required_precision": 1.0, "required_recall": 1.0, "questions_extracted": 30, "questions_gold": 30, "question_text_ok": 1.0, "question_file_ok": 1.0, "sections_recall": 1.0, "sections_missing": [], "forbidden_ok": true, "deadline_ok": true, "media_ok": true}
+[розбір lab6] {"ok": true, "latency_s": 0.02, "required_precision": 1.0, "required_recall": 1.0, "questions_extracted": 30, "questions_gold": 30, "question_text_ok": 1.0, "question_file_ok": 1.0, "sections_recall": 1.0, "sections_missing": [], "forbidden_ok": true, "deadline_ok": true, "media_ok": true}
+[розбір mkr1] {"ok": true, "latency_s": 0.01, "required_precision": 1.0, "required_recall": 1.0, "questions_extracted": 12, "questions_gold": 12, "question_text_ok": 1.0, "question_file_ok": 1.0, "sections_recall": 0.8333, "sections_missing": ["таблиця результатів «до / після»"], "forbidden_ok": true, "deadline_ok": true, "media_ok": true}
+[суддівство] {"items": 50, "batches": 10, "failed_batches": 0, "originals_answered_rate": 0.8667, "originals_false_alarm_rate": 0.0, "swapped_caught_rate": 1.0, "filler_caught_rate": 1.0, "defects_missed": 0, "quote_rejected": 4, "accepted_with_quote": 26, "latency_s": 0.03, "request_latency_s": 21.84, "tokens": {"prompt_tokens": 48362, "completion_tokens": 2708, "cost_usd": 0.0, "calls": 0, "cache_hits": 10}}
+[разом] {"calls": 0, "cache_hits": 13, "prompt_tokens": 58592, "completion_tokens": 8184, "failures": 0, "cost_usd": 0.0, "latency_s": 41.32}
+
+=== Крок 4/5: реальне використання з AI-суддею ===
+report.md зібрано (24882 символів). AI-частина: є
+(demo.mp4 ще немає — помилка E_MISSING очікувана, поки ви не збережете запис)
+labcheck | МКР-1. Як я покращив/ла своє життя за допомогою AI | специфікація: D:\mkr1\solution\specs\mkr1.json
+тека: D:\
+
+--- Обов'язкові файли ---
+[ OK ] mkr1/report.md
+[ OK ] mkr1/solution
+[FAIL] mkr1/demo.mp4  (НЕМАЄ)
+[ OK ] mkr1/evidence
+
+--- Знахідки ---
+[ERR ] E_MISSING mkr1/demo.mp4: обов'язкового файлу немає за точним шляхом
+[info] I_GITIGNORED mkr1/solution/__pycache__: W_JUNK пропущено: шлях у .gitignore (службова тека не має потрапляти в репозиторій)
+[info] I_GITIGNORED mkr1/solution/.env: E_SECRET пропущено: шлях у .gitignore (файл змінних середовища майже напевно містить ключі)
+[info] I_GITIGNORED mkr1/solution/labcheck/__pycache__: W_JUNK пропущено: шлях у .gitignore (службова тека не має потрапляти в репозиторій)
+[info] I_DEADLINE 2026-12-01: до дедлайну 7 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 12 із 12
+вердикти AI: є відповідь — 12
+
+--- Підсумок ---
+помилок: 1 | попереджень: 0 | час: 0.22 с | AI: 0 викл., 3 з кешу, 3871+657 токенів, $0.0000
+ВИСНОВОК: НЕ ГОТОВО до здачі — виправте помилки [ERR].
+labcheck | Лабораторна 6. Генерація, доповнена пошуком (RAG) | специфікація: D:\mkr1\solution\specs\lab6.json
+тека: D:\
+
+--- Обов'язкові файли ---
+[ OK ] lab6/01_embeddings.ipynb
+[ OK ] lab6/02_rag_from_scratch.ipynb
+[ OK ] lab6/03_rag_langchain_eval.ipynb
+[ OK ] lab6/rag_project.ipynb
+
+--- Знахідки ---
+[WARN] W_AI_NEEDS_REVIEW lab6/02_rag_from_scratch.ipynb: питання 11: перевірити вручну — цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну Модель цитувала: «емоційно-творчої та когнітивної діяльності».
+[WARN] W_AI_NEEDS_REVIEW lab6/03_rag_langchain_eval.ipynb: питання 24: перевірити вручну — цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну Модель цитувала: «BM25 порівнює слова, тому вигравати має там, де запит дослівно містить рідкісні слова».
+[WARN] W_AI_NEEDS_REVIEW lab6/03_rag_langchain_eval.ipynb: питання 25: перевірити вручну — цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну Модель цитувала: «RRF = 1/(60+2) + 1/(60+5) = 1/62 + 1/65 ≈ 0,016129 + 0,015385 = 0,031514».
+[WARN] W_AI_NEEDS_REVIEW lab6/03_rag_langchain_eval.ipynb: питання 30: перевірити вручну — цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну Модель цитувала: «1. Стипендія ректора — імовірно помилка судді.».
+[info] I_DEADLINE 2026-12-12: до дедлайну 18 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 30 із 30
+вердикти AI: є відповідь — 26, перевірити вручну — 4
+
+--- Підсумок ---
+помилок: 0 | попереджень: 4 | час: 0.27 с | AI: 0 викл., 6 з кешу, 34244+1861 токенів, $0.0000
+ВИСНОВОК: помилок немає; перегляньте попередження [WARN] перед здачею.
+
+=== Крок 5/5: збираю report.md із виміряних чисел ===
+report.md зібрано (24882 символів). AI-частина: є
+плейсхолдерів: 0; місць «не вимірювалось»: 2
+збережено D:\mkr1\evidence\charts\before_after.png
+
+Готово за 13 с. Далі: запишіть demo.mp4 і зробіть git push (див. solution/README.md).

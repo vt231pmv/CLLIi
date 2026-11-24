@@ -1,0 +1,463 @@
+{
+ "model": "gemini-3.5-flash-lite",
+ "date": "2026-11-24",
+ "spec": {
+  "lab5": {
+   "ok": true,
+   "latency_s": 0.03,
+   "verification": {
+    "required_kept": 4,
+    "required_dropped": 0,
+    "forbidden_dropped": 0,
+    "questions_kept": 30,
+    "questions_healed": 0,
+    "questions_dropped": 0,
+    "sections_dropped": 0,
+    "files_nulled": 0,
+    "paths_normalized": 0,
+    "required_duplicates": 0
+   },
+   "required_precision": 1.0,
+   "required_recall": 1.0,
+   "questions_extracted": 30,
+   "questions_gold": 30,
+   "question_text_ok": 1.0,
+   "question_file_ok": 1.0,
+   "sections_recall": 1.0,
+   "sections_missing": [],
+   "forbidden_ok": true,
+   "deadline_ok": true,
+   "media_ok": true,
+   "tokens": {
+    "prompt_tokens": 3186,
+    "completion_tokens": 2149
+   }
+  },
+  "lab6": {
+   "ok": true,
+   "latency_s": 0.02,
+   "verification": {
+    "required_kept": 4,
+    "required_dropped": 0,
+    "forbidden_dropped": 0,
+    "questions_kept": 30,
+    "questions_healed": 0,
+    "questions_dropped": 0,
+    "sections_dropped": 0,
+    "files_nulled": 0,
+    "paths_normalized": 0,
+    "required_duplicates": 0
+   },
+   "required_precision": 1.0,
+   "required_recall": 1.0,
+   "questions_extracted": 30,
+   "questions_gold": 30,
+   "question_text_ok": 1.0,
+   "question_file_ok": 1.0,
+   "sections_recall": 1.0,
+   "sections_missing": [],
+   "forbidden_ok": true,
+   "deadline_ok": true,
+   "media_ok": true,
+   "tokens": {
+    "prompt_tokens": 3726,
+    "completion_tokens": 2616
+   }
+  },
+  "mkr1": {
+   "ok": true,
+   "latency_s": 0.01,
+   "verification": {
+    "required_kept": 4,
+    "required_dropped": 0,
+    "forbidden_dropped": 0,
+    "questions_kept": 12,
+    "questions_healed": 0,
+    "questions_dropped": 0,
+    "sections_dropped": 0,
+    "files_nulled": 0,
+    "paths_normalized": 0,
+    "required_duplicates": 0
+   },
+   "required_precision": 1.0,
+   "required_recall": 1.0,
+   "questions_extracted": 12,
+   "questions_gold": 12,
+   "question_text_ok": 1.0,
+   "question_file_ok": 1.0,
+   "sections_recall": 0.8333,
+   "sections_missing": [
+    "таблиця результатів «до / після»"
+   ],
+   "forbidden_ok": true,
+   "deadline_ok": true,
+   "media_ok": true,
+   "tokens": {
+    "prompt_tokens": 3318,
+    "completion_tokens": 711
+   }
+  }
+ },
+ "judge": {
+  "items": 50,
+  "batches": 10,
+  "failed_batches": 0,
+  "originals_answered_rate": 0.8667,
+  "originals_false_alarm_rate": 0.0,
+  "swapped_caught_rate": 1.0,
+  "filler_caught_rate": 1.0,
+  "defects_missed": 0,
+  "quote_rejected": 4,
+  "accepted_with_quote": 26,
+  "per_kind": {
+   "original": {
+    "n": 30,
+    "answered": 26,
+    "partial": 0,
+    "off_topic": 0,
+    "missing": 0,
+    "needs_review": 4
+   },
+   "filler": {
+    "n": 10,
+    "answered": 0,
+    "partial": 0,
+    "off_topic": 0,
+    "missing": 10,
+    "needs_review": 0
+   },
+   "swapped": {
+    "n": 10,
+    "answered": 0,
+    "partial": 0,
+    "off_topic": 9,
+    "missing": 1,
+    "needs_review": 0
+   }
+  },
+  "latency_s": 0.03,
+  "request_latency_s": 21.84,
+  "tokens": {
+   "prompt_tokens": 48362,
+   "completion_tokens": 2708,
+   "cost_usd": 0.0,
+   "calls": 0,
+   "cache_hits": 10
+  },
+  "verdicts": [
+   {
+    "kind": "original",
+    "n": 1,
+    "verdict": "answered",
+    "reason": "Пояснено через нормалізацію векторів і скалярний добуток."
+   },
+   {
+    "kind": "original",
+    "n": 2,
+    "verdict": "answered",
+    "reason": "Наведено час виконання, перелік клітинок та вказано про відсутність критичних помилок."
+   },
+   {
+    "kind": "original",
+    "n": 3,
+    "verdict": "answered",
+    "reason": "Пояснено значення чисел і те, що довший текст мовчки обрізається."
+   },
+   {
+    "kind": "original",
+    "n": 4,
+    "verdict": "answered",
+    "reason": "Пояснено через незалежність косинуса від довжини вектора та корисність для змісту текстів."
+   },
+   {
+    "kind": "original",
+    "n": 5,
+    "verdict": "answered",
+    "reason": "Додано три речення та наведено коментарі до значень їхньої подібності."
+   },
+   {
+    "kind": "original",
+    "n": 6,
+    "verdict": "answered",
+    "reason": "Пояснено причину та наведено результати пошуку для моделі."
+   },
+   {
+    "kind": "original",
+    "n": 7,
+    "verdict": "answered",
+    "reason": "Пояснено причину групування тем та можливість судити за відстанню на графіку."
+   },
+   {
+    "kind": "original",
+    "n": 8,
+    "verdict": "answered",
+    "reason": "Порівняно матриці та описано вплив інструкції на запит."
+   },
+   {
+    "kind": "original",
+    "n": 9,
+    "verdict": "answered",
+    "reason": "Перевірено власні питання, виведено подібність і порівняно з питанням без відповіді."
+   },
+   {
+    "kind": "original",
+    "n": 10,
+    "verdict": "answered",
+    "reason": "Пояснено причину покращення та наведено приклад фрагмента без назви."
+   },
+   {
+    "kind": "original",
+    "n": 11,
+    "verdict": "needs_review",
+    "reason": "цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну",
+    "rejected_quote": "емоційно-творчої та когнітивної діяльності"
+   },
+   {
+    "kind": "original",
+    "n": 12,
+    "verdict": "answered",
+    "reason": "Порівняно фрагменти і пояснено, який вид розбиття зручніший для перевірки джерела."
+   },
+   {
+    "kind": "original",
+    "n": 13,
+    "verdict": "answered",
+    "reason": "Наведено кількість фрагментів для кожного способу та пояснено, чому 9 питань замало."
+   },
+   {
+    "kind": "original",
+    "n": 14,
+    "verdict": "answered",
+    "reason": "Пояснено призначення do_sample=False та описано наслідки ввімкнення семплювання."
+   },
+   {
+    "kind": "original",
+    "n": 15,
+    "verdict": "answered",
+    "reason": "Наведено відповідь моделі без документів, назву явища та причину його виникнення."
+   },
+   {
+    "kind": "original",
+    "n": 16,
+    "verdict": "answered",
+    "reason": "Текст докладно описує складові промпту та призначення кожної частини."
+   },
+   {
+    "kind": "original",
+    "n": 17,
+    "verdict": "answered",
+    "reason": "Текст порівнює k=1 і k=15, показує зміни й пояснює вибір значення k."
+   },
+   {
+    "kind": "original",
+    "n": 18,
+    "verdict": "answered",
+    "reason": "Показано зміну відповіді без правила та пояснено причину."
+   },
+   {
+    "kind": "original",
+    "n": 19,
+    "verdict": "answered",
+    "reason": "Пояснено причину помилки та вказано, хто і як має її виправляти."
+   },
+   {
+    "kind": "original",
+    "n": 20,
+    "verdict": "answered",
+    "reason": "Пояснено механіку інʼєкції, причину слабкості промпту та запропоновано два захисти."
+   },
+   {
+    "kind": "original",
+    "n": 21,
+    "verdict": "answered",
+    "reason": "Наведено час виконання та відсутність проблем."
+   },
+   {
+    "kind": "original",
+    "n": 22,
+    "verdict": "answered",
+    "reason": "Пояснено відмінності та призначення параметра keep_separator."
+   },
+   {
+    "kind": "original",
+    "n": 23,
+    "verdict": "answered",
+    "reason": "Пояснено вибір стратегії та наслідки відсутності нормалізації."
+   },
+   {
+    "kind": "original",
+    "n": 24,
+    "verdict": "needs_review",
+    "reason": "цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну",
+    "rejected_quote": "BM25 порівнює слова, тому вигравати має там, де запит дослівно містить рідкісні слова"
+   },
+   {
+    "kind": "original",
+    "n": 25,
+    "verdict": "needs_review",
+    "reason": "цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну",
+    "rejected_quote": "RRF = 1/(60+2) + 1/(60+5) = 1/62 + 1/65 ≈ 0,016129 + 0,015385 = 0,031514"
+   },
+   {
+    "kind": "original",
+    "n": 26,
+    "verdict": "answered",
+    "reason": "Текст пояснює причину обмеження до 20 кандидатів і наводить кількість проходів для всього корпусу (N)."
+   },
+   {
+    "kind": "original",
+    "n": 27,
+    "verdict": "answered",
+    "reason": "Текст містить опис доданих питань та таблицю з порівнянням метрик ретриву до і після їх додавання."
+   },
+   {
+    "kind": "original",
+    "n": 28,
+    "verdict": "answered",
+    "reason": "Текст порівнює метрики чотирьох методів і пояснює, чому переранжування найсильніше впливає саме на hit@1."
+   },
+   {
+    "kind": "original",
+    "n": 29,
+    "verdict": "answered",
+    "reason": "Текст описує проблеми використання тієї самої моделі суддею та містить результати ручної перевірки п'яти відповідей."
+   },
+   {
+    "kind": "original",
+    "n": 30,
+    "verdict": "needs_review",
+    "reason": "цитату моделі не знайдено в тексті відповіді — вердикт не прийнято; перевірте вручну",
+    "rejected_quote": "1. Стипендія ректора — імовірно помилка судді."
+   },
+   {
+    "kind": "filler",
+    "n": 1,
+    "verdict": "missing",
+    "reason": "Текст містить лише шаблон-заглушку про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 3,
+    "verdict": "off_topic",
+    "reason": "Текст описує результати тестування впливу назв документів на пошук, але не пояснює числа після завантаження моделі."
+   },
+   {
+    "kind": "filler",
+    "n": 4,
+    "verdict": "missing",
+    "reason": "Текст містить лише шаблон-заглушку про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 6,
+    "verdict": "off_topic",
+    "reason": "Текст описує порівняння методів розбиття текстів на фрагменти, а не моделі Qwen чи dance-battle."
+   },
+   {
+    "kind": "filler",
+    "n": 7,
+    "verdict": "missing",
+    "reason": "Текст містить лише шаблон-заглушку про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 9,
+    "verdict": "missing",
+    "reason": "Текст стосується структури промпта та токенів, немає виконання завдання з розділу 8."
+   },
+   {
+    "kind": "filler",
+    "n": 10,
+    "verdict": "missing",
+    "reason": "Текст містить лише стандартну заглушку про те, що питання потребує розгляду."
+   },
+   {
+    "kind": "swapped",
+    "n": 12,
+    "verdict": "off_topic",
+    "reason": "Текст присвячений фільтрації за метаданими та шифрам спеціальностей, а не порівнянню фрагментів."
+   },
+   {
+    "kind": "filler",
+    "n": 13,
+    "verdict": "missing",
+    "reason": "Текст містить лише стандартну заглушку про те, що питання потребує розгляду."
+   },
+   {
+    "kind": "swapped",
+    "n": 15,
+    "verdict": "off_topic",
+    "reason": "Текст описує порівняння способів розбиття тексту та параметр keep_separator, а не питання про гуртожиток."
+   },
+   {
+    "kind": "filler",
+    "n": 16,
+    "verdict": "missing",
+    "reason": "Текст містить лише повідомлення про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 18,
+    "verdict": "off_topic",
+    "reason": "Текст присвячений розрахунку та порівнянню RRF-пошуку, а не видаленню правила про відмову."
+   },
+   {
+    "kind": "filler",
+    "n": 19,
+    "verdict": "missing",
+    "reason": "Текст містить лише повідомлення про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 21,
+    "verdict": "off_topic",
+    "reason": "У тексті немає інформації про час виконання клітинок та проблеми з запуском ноутбука."
+   },
+   {
+    "kind": "filler",
+    "n": 22,
+    "verdict": "missing",
+    "reason": "Текст містить лише повідомлення про те, що відповідь буде додана пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 24,
+    "verdict": "off_topic",
+    "reason": "Текст стосується косинусної подібності та нормалізації ембедингів, а не порівняння BM25 із семантичним пошуком."
+   },
+   {
+    "kind": "filler",
+    "n": 25,
+    "verdict": "missing",
+    "reason": "Текст містить лише стандартне повідомлення про те, що відповідь буде додано пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 27,
+    "verdict": "off_topic",
+    "reason": "Текст описує перевірку впливу довжини тексту на косинусну подібність, а не додавання питань до бенчмарку."
+   },
+   {
+    "kind": "filler",
+    "n": 28,
+    "verdict": "missing",
+    "reason": "Текст містить лише стандартне повідомлення про те, що відповідь буде додано пізніше."
+   },
+   {
+    "kind": "swapped",
+    "n": 30,
+    "verdict": "off_topic",
+    "reason": "Текст присвячений аналізу методів зменшення розмірності (PCA), а не аналізу відмов у генерації чи ретриві."
+   }
+  ]
+ },
+ "llm_total": {
+  "calls": 0,
+  "cache_hits": 13,
+  "prompt_tokens": 58592,
+  "completion_tokens": 8184,
+  "failures": 0,
+  "cost_usd": 0.0,
+  "latency_s": 41.32
+ }
+}

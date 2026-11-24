@@ -1,0 +1,28 @@
+# lab6_after: labcheck check --spec specs/lab6.json --no-ai
+# код завершення: 0
+# дата: 2026-11-24 14:18:06
+# вхідні файли (SHA-256, перші 12 символів):
+#   01_embeddings.ipynb  8da97eecc88d  1351682 Б
+#   02_rag_from_scratch.ipynb  2db33c3eb483  482123 Б
+#   03_rag_langchain_eval.ipynb  d587ee9bb580  690032 Б
+#   rag_project.ipynb  7b9c8edb4df6  776108 Б
+labcheck | Лабораторна 6. Генерація, доповнена пошуком (RAG) | специфікація: /home/claude/mkr1/solution/specs/lab6.json
+тека: /tmp/labcheck_d47lgy1p
+
+--- Обов'язкові файли ---
+[ OK ] lab6/01_embeddings.ipynb
+[ OK ] lab6/02_rag_from_scratch.ipynb
+[ OK ] lab6/03_rag_langchain_eval.ipynb
+[ OK ] lab6/rag_project.ipynb
+
+--- Знахідки ---
+(немає)
+[info] I_DEADLINE 2026-12-12: до дедлайну 18 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 30 із 30
+
+--- Підсумок ---
+помилок: 0 | попереджень: 0 | час: 0.08 с
+примітка: AI-суддівство пропущено: не задано LLM_API_KEY/LLM_MODEL (або --no-ai); решта перевірок виконано
+ВИСНОВОК: ГОТОВО до здачі.

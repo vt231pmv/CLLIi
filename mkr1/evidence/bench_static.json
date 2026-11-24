@@ -1,0 +1,115 @@
+{
+ "kinds": 17,
+ "variants_per_kind": 5,
+ "mutants": 85,
+ "found": 85,
+ "recall": 1.0,
+ "findings_on_clean": 0,
+ "clean_runs": 5,
+ "precision_of_findings": 1.0,
+ "mean_run_s_clean_synthetic": 0.0607,
+ "rows": [
+  {
+   "defect": "видалено обов'язковий файл",
+   "expected": "E_MISSING",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "регістр каталогу Lab6 замість lab6",
+   "expected": "E_MISSING",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "суфікс « (1)» після завантаження",
+   "expected": "E_MISSING",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "плейсхолдер у markdown",
+   "expected": "E_PLACEHOLDER",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "зник заголовок відповіді",
+   "expected": "E_Q_MISSING",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "порожня відповідь",
+   "expected": "W_Q_THIN",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "ключ API у коді",
+   "expected": "E_SECRET",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "файл .env",
+   "expected": "E_SECRET",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "ваги моделі",
+   "expected": "E_FORBIDDEN",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "векторний індекс",
+   "expected": "E_FORBIDDEN",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "файл понад 100 МБ",
+   "expected": "E_TOO_BIG",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "пошкоджений JSON ноутбука",
+   "expected": "E_BAD_JSON",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "помилка у виводі клітинки",
+   "expected": "E_CELL_ERROR",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "клітинки не запускались",
+   "expected": "W_NOT_EXECUTED",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "widgets без state (GitHub не відкриє)",
+   "expected": "W_WIDGETS_STATE",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "службова тека .ipynb_checkpoints",
+   "expected": "W_JUNK",
+   "found": 5,
+   "variants": 5
+  },
+  {
+   "defect": "зникла секція звіту",
+   "expected": "W_SECTION",
+   "found": 5,
+   "variants": 5
+  }
+ ]
+}

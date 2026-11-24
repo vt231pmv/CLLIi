@@ -1,0 +1,123 @@
+{
+ "title": "МКР-1. Як я покращив/ла своє життя за допомогою AI",
+ "deadline": "2026-12-01",
+ "forbidden": [],
+ "required": [
+  {
+   "path": "mkr1/report.md",
+   "type": "file",
+   "quote": "/mkr1/report.md"
+  },
+  {
+   "path": "mkr1/solution",
+   "type": "dir",
+   "quote": "/mkr1/solution/*"
+  },
+  {
+   "path": "mkr1/demo.mp4",
+   "type": "file",
+   "quote": "/mkr1/demo.mp4"
+  },
+  {
+   "path": "mkr1/evidence",
+   "type": "dir",
+   "quote": "/mkr1/evidence/*"
+  }
+ ],
+ "media": [
+  {
+   "path": "mkr1/demo.mp4",
+   "min_s": 60,
+   "max_s": 90,
+   "quote": "Відео 60–90 секунд"
+  }
+ ],
+ "questions": [
+  {
+   "n": 1,
+   "text": "Яку проблему ви вирішували?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 2,
+   "text": "Чому ця проблема є для вас реальною та корисною для автоматизації?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 3,
+   "text": "Як задача виконувалась до використання AI?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 4,
+   "text": "Яке AI-рішення ви побудували?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 5,
+   "text": "Чому ви обрали саме цей рівень AI-рішення?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 6,
+   "text": "Які альтернативи ви розглядали?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 7,
+   "text": "Які AI-моделі та інструменти використали?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 8,
+   "text": "Які проблеми або помилки виникли?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 9,
+   "text": "Наскільки надійним є ваше рішення?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 10,
+   "text": "Що змінилося після впровадження AI?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 11,
+   "text": "Скільки часу або інших ресурсів вдалося заощадити?",
+   "file": "mkr1/report.md"
+  },
+  {
+   "n": 12,
+   "text": "Що ви змінили б у своєму рішенні, якби продовжували його розвивати?",
+   "file": "mkr1/report.md"
+  }
+ ],
+ "sections": [
+  {
+   "title": "архітектура рішення",
+   "file": "mkr1/report.md"
+  },
+  {
+   "title": "використані AI-технології та інструменти",
+   "file": "mkr1/report.md"
+  },
+  {
+   "title": "обґрунтування вибору підходу",
+   "file": "mkr1/report.md"
+  },
+  {
+   "title": "таблиця ризиків",
+   "file": "mkr1/report.md"
+  },
+  {
+   "title": "таблиця результатів «до / після»",
+   "file": "mkr1/report.md"
+  },
+  {
+   "title": "відповіді на 12 питань з п.8",
+   "file": "mkr1/report.md"
+  }
+ ]
+}

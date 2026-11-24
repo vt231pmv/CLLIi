@@ -1,0 +1,15 @@
+section,name,setting,params_millions,val_loss,val_bpc,best_iter,last_iter,vocab_size,context_len,n_layers,n_heads,embed_dim,accuracy,macro_f1,latency_ms,notes
+3,minigpt_v1,,1.836,4.237,2.0421,4999,4999,4000,128,4,4,128,,,,"базовий: словник 4000, контекст 128, 4 шари"
+3,minigpt_v2,,1.065,3.1592,2.1333,4999,4999,1000,128,4,4,128,,,,словник 1000 (решта як v1)
+3,minigpt_v3,,2.628,4.0158,1.9355,4999,4999,4000,128,8,4,128,,,,8 шарів (решта як v1)
+3,minigpt_v4,,1.853,4.2152,2.0316,4999,4999,4000,256,4,4,128,,,,контекст 256 (решта як v1)
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,baseline,279.0,,,,,,,,,,0.9167,0.9164,118.16,одна зміна відносно baseline
+5,joeddav/xlm-roberta-large-xnli,baseline,559.9,,,,,,,,,,0.9167,0.9164,71.42,"zero-shot, укр. мітки, шаблон «Тема цього тексту: {}.»"
+5,facebook/bart-large-mnli,baseline,407.3,,,,,,,,,,0.375,0.3608,133.82,"zero-shot, укр. мітки, шаблон «Тема цього тексту: {}.»"
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,шаблон англійський,279.0,,,,,,,,,,0.9167,0.9115,103.83,одна зміна відносно baseline
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,шаблон «категорія»,279.0,,,,,,,,,,0.9167,0.9167,105.16,одна зміна відносно baseline
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,мітки англійські,279.0,,,,,,,,,,0.875,0.8773,108.5,одна зміна відносно baseline
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,мітки описові,279.0,,,,,,,,,,0.75,0.7059,140.08,одна зміна відносно baseline
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,multi_label=True,279.0,,,,,,,,,,0.9167,0.9164,107.47,одна зміна відносно baseline
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,поріг 0.5,279.0,,,,,,,,,,0.9167,0.9353,,coverage=0.96; accuracy на відповідях=0.96
+5,MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7,поріг 0.7,279.0,,,,,,,,,,0.7917,0.8523,,coverage=0.83; accuracy на відповідях=0.95

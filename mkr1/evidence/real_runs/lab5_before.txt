@@ -1,0 +1,32 @@
+# lab5_before: labcheck check --spec specs/lab5.json --no-ai
+# код завершення: 1
+# дата: 2026-11-24 14:18:07
+# вхідні файли (SHA-256, перші 12 символів):
+#   01_bert_head.ipynb  bf338ddd1c96  566154 Б
+#   02_chat_templates.ipynb  45ca7e441670  975026 Б
+#   03_sft_lora.ipynb  56ae5045cd63  932639 Б
+#   ft_project.ipynb  fc100fe17815  844708 Б
+labcheck | Лабораторна 5. Донавчання моделей (Fine-Tuning) | специфікація: /home/claude/mkr1/solution/specs/lab5.json
+тека: /tmp/labcheck__kk_01fg
+
+--- Обов'язкові файли ---
+[ OK ] lab5/01_bert_head.ipynb
+[ OK ] lab5/02_chat_templates.ipynb
+[ OK ] lab5/03_sft_lora.ipynb
+[ OK ] lab5/ft_project.ipynb
+
+--- Знахідки ---
+[ERR ] E_PLACEHOLDER lab5/01_bert_head.ipynb: залишилось плейсхолдерів у markdown-клітинках: 2 (клітинки 26, 57)
+[ERR ] E_PLACEHOLDER lab5/03_sft_lora.ipynb: залишилось плейсхолдерів у markdown-клітинках: 1 (клітинки 51)
+[WARN] W_SECTION lab5/ft_project.ipynb: не знайдено секції звіту «Задача і чому потрібне донавчання»
+[WARN] W_SECTION lab5/ft_project.ipynb: не знайдено секції звіту «Результат після донавчання»
+[WARN] W_SECTION lab5/ft_project.ipynb: не знайдено секції звіту «Висновок»
+[info] I_DEADLINE 2026-11-28: до дедлайну 4 дн.
+
+--- Питання ---
+знайдено заголовків відповідей: 30 із 30
+
+--- Підсумок ---
+помилок: 2 | попереджень: 3 | час: 0.08 с
+примітка: AI-суддівство пропущено: не задано LLM_API_KEY/LLM_MODEL (або --no-ai); решта перевірок виконано
+ВИСНОВОК: НЕ ГОТОВО до здачі — виправте помилки [ERR].

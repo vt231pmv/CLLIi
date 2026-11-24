@@ -1,0 +1,8 @@
+{
+  "_коментар": "Оцінки «з голови», без таймера (так дозволив викладач). Змініть на свої значення й запустіть: python finalize_report.py",
+  "manual_check_minutes": 20,
+  "manual_operations": 7,
+  "reading_output_minutes_after": 2,
+  "operations_after": 1,
+  "checks_per_semester": 12
+}
